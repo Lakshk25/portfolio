@@ -1,0 +1,244 @@
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+}
+
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+}
+
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+    html {
+        font-size: 65%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    h2 {
+        padding: 0 2rem;
+        margin-top: 5rem;
+    }
+
+    /* header */
+
+    .header h1{
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+        margin-left: 1rem;
+    }
+
+
+    /* nav bar direction row */
+    .nav-bar {
+        height: 1rem;
+        padding-left: 0;
+        display: flex;
+        position: sticky;
+        z-index: 1;
+    }
+
+    
+
+    .nav-menu {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .nav-menu .nav-item a {
+        color: #101E3D;
+        font-weight: 600;
+    }
+
+    .nav-bar ul li:nth-child(1) a.active::before {
+        left: 1rem;
+    }
+    .nav-bar ul li:nth-child(2) a.active::before {
+        left: 9rem;
+    }
+    .nav-bar ul li:nth-child(3) a.active::before {
+        left: 18rem;
+    }
+    .nav-bar ul li:nth-child(4) a.active::before {
+        left: 27rem;
+    }
+
+
+
+
+    /*  hide social icons (display on bottom) */
+    .social-link {
+        display: none;
+    }
+
+    /* other section */
+    .other-content {
+        width: 100vw;
+    }
+
+    .about h2 {
+        padding: 4rem 2rem;
+    }
+    .about p {
+        width: 100vw;
+        padding: 0 2rem;
+        font-size: 1.7rem;
+    }
+
+    .about a {
+        padding: 0 2rem;
+    }
+
+    /* project section */
+
+    .project-tiles,
+    .project-row,
+    p {
+        width: 100vw;
+        
+    }
+
+    /* contact section */
+    
+    .contact form {
+        width: 90vw;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .contact h2 {
+        width: auto;
+        padding-left: 10rem;
+    }
+
+    .contact h2::before{
+        top: 0;
+        right: 0;
+        width: 53vw;
+        left: 8.8rem;
+        top: 13rem;
+    }
+
+    .contact p{
+        padding: 0;
+        padding-left: .5rem;
+        margin-top: 5rem;
+    }
+
+    /* social media */
+    .mobile-view{
+        display:inline-block;
+        margin-top: 2rem;
+        height: 10rem;
+        color: white;
+    }
+    .mobile-view a i{
+        color: white;
+        font-size: 4rem;
+        padding: 0 2rem;
+        margin-left: 1rem;
+    }
+    .mobile-view a i:hover{
+        background-color: transparent;
+    }
+    
+
+}
+
+@media only screen and (device-width: 768px) {
+    /* default iPad screens */
+    .nav-bar ul li a.active::before {
+        left: 5rem;
+        width: 15rem;
+    }
+    .about{
+        height: 90vh;
+    }
+
+    /* Project Col */
+    .project-col{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .project-col p{
+        padding-left: 2rem;
+    }
+
+    .contact h2 {
+        margin-top: 15rem;
+        padding-left: 6rem;
+    }
+
+    .contact h2::before{
+        top: 0;
+        right: 0;
+        left: 6rem;
+        width: 18rem;
+        top: 13rem;
+    }
+
+    .contact p {
+        margin-left: 5.5rem;
+    }
+    .contact form {
+        height: 60vh;
+    }
+
+}
+
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+
+    /* nav bar line animation */
+    .nav-bar ul li a.active::before {
+        left: 5rem;
+        width: 15rem;
+    }
+
+
+    /* Project Col */
+    .project-col{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .project-col p{
+        padding-left: 2rem;
+    }
+
+    .contact h2 {
+        margin: 0;
+        padding-left: 6rem;
+    }
+
+    .contact h2::before{
+        top: 0;
+        right: 0;
+        left: 6rem;
+        width: 18rem;
+        top: 13rem;
+    }
+
+    .contact p {
+        margin-left: 5.5rem;
+    }
+}
