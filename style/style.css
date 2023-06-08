@@ -328,13 +328,13 @@ a , button{
         color: rgb(12, 230, 230);
     }
     .tensorflow:hover{
-        cursor:url('style/icons/tensorflow.svg') , auto;
+        cursor:url('icons/tensorflow.svg') , auto;
     }
     .react:hover{
-        cursor:url('style/icons/react.png') , auto;
+        cursor:url('icons/react.png') , auto;
     }
     .scikit-learn:hover{
-        cursor:url('style/icons/scikit.png') , auto;
+        cursor:url('icons/scikit.png') , auto;
     }
     .about p {
         padding-top: 5rem;
