@@ -12,7 +12,22 @@ body{
 
 html{
     font-size: 62.5%;
+    cursor: url('icons/cursor.png'), auto;
     /* overflow-x: hidden;  */
+}
+
+html::-webkit-scrollbar {
+    width: 1em;
+}
+
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 .6rem rgba(255, 0, 0, 0.07);
+    padding-left: .5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 234, 255);
+    outline: .1rem solid slategrey;
 }
 
 p{
@@ -35,6 +50,10 @@ h2{
 a , button{
     font-size: 1.8rem;
     font-family: 'Montserrat';
+}
+a:hover,
+button:hover {
+    cursor: url('icons/hand.png'), auto;
 }
 
 
