@@ -7,6 +7,7 @@
 
 body{
     background-color: #101E3D;
+    cursor:url('icons/cursor.png') , auto;
      /* overflow-x: hidden; */
 }
 
@@ -267,15 +268,7 @@ a , button{
     font-weight: 700;
     color: rgb(12, 230, 230);
 }
-.tensorflow:hover{
-    cursor:url('icons/tensorflow.svg') , auto;
-}
-.react:hover{
-    cursor:url('icons/react.png') , auto;
-}
-.scikit-learn:hover{
-    cursor:url('icons/scikit.png') , auto;
-}
+
 .about p {
     padding-top: 5rem;
     width: 40vw;
